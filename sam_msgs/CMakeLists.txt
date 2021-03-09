@@ -59,14 +59,26 @@ add_message_files(
   Command.msg
   ArrayCommand.msg
   Leak.msg
+  LightCommand.msg
+  LightCommandArray.msg
+  ConsumedCharge.msg
+  ConsumedChargeArray.msg
+  ConsumedChargeFeedback.msg
+  CTP.msg
+  UavcanNodeStatus.msg
+  UavcanNodeStatusNamed.msg
+  UavcanNodeStatusNamedArray.msg
+  CircuitStatus.msg
+  CircuitStatusStamped.msg
+  CircuitStatusStampedArray.msg
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  UavcanUpdateBattery.srv
+  # Service2.srv
+)
 
 ## Generate actions in the 'action' folder
 add_action_files(
