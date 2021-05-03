@@ -195,7 +195,7 @@ class Dynamics:
             method=method,
             rtol=rtol,
             atol=atol,
-            jac=jit(lambda t, x: self.state_dynamics_jac_state(x, controller(x), *self.params.values()))
+            # jac=jit(lambda t, x: self.state_dynamics_jac_state(x, controller(x), *self.params.values()))
         )
 
         # return times, states, and controls
